@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombay Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="img/mustache.png" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!--navbar-->
+    <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/mustache - icon.png" width="55px">
+                    <a href="">bombay Salon</a>
+                </div>
+                <nav>
+                    <ul id="mymenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">about</a></li>
+                        <li><a href="index.html">service</a></li>
+                        <li><a href="gallery.html">gallery</a></li>
+                        <li><a href="index.html">contact</a></li>
+                        <li><a href="booking.html" class="active">book now</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars" id="menu-icon" onclick="togglemenu()"></i>
+            </div>
+    </div>
+
+    <!--booking-->
+    <div class="booking">
+		<form action="">
+			<span class="head">book to make your style</span>
+			<div class="row1">
+				<input type="text" placeholder="Name">
+			</div>
+			<div class="row1">
+				<input type="tel" name="tel" maxlength="10" placeholder="phone no">
+			</div>
+            <div class="row1">
+                <select name="style">
+                    <option selected>Make your choice</option>
+                    <option value="Hair cutting">Hair cutting</option>
+                    <option value="shaving">shaving</option>
+                    <option value="tattoo">tattoo</option>
+                </select>  
+            </div>
+			<div class="row1">
+				<input type="submit" value="book">
+			</div>
+		</form>
+	</div>
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <i class="fa fa-phone"></i>
+                    <h2>contact </h2>
+                    <p><span class="footer-span">phno: </span> +91-9944326175</p>
+                </div>
+                <div class="footer-col2">
+                    <img src="img/mustache - icon.png" width="125px">
+                    <h1>bombay salon</h1>
+                    <h3>we're the  last of breed.</h3>
+                    <p>achieve your dream style.</p>
+                </div>
+                <div class="footer-col3">
+                    <i class="fa fa-location-arrow"></i>
+                    <h2>address</h2>
+                    <p>G.N Garden, Neruperichal, <br> pooluvapatti (po), Tirupur -641602</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy-right">
+        <p>&#169; 2021 - Tamilarasu</p>
+    </div>
+
+
+    <!--script-->
+    <script>
+        var mymenu = document.getElementById("mymenu");
+        mymenu.style.maxHeight = '0px';
+        function togglemenu(){
+            if( mymenu.style.maxHeight == '0px'){
+                mymenu.style.maxHeight = '300px';
+            }else{
+                mymenu.style.maxHeight = '0px';
+            }
+        }
+    </script>
+</body>
+</html>

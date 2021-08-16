@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombay Salon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="img/mustache.png" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <!--navbar-->
+    <div class="header">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="img/mustache - icon.png" width="55px">
+                    <a href="">bombay Salon</a>
+                </div>
+                <nav>
+                    <ul id="mymenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="">service</a></li>
+                        <li><a href="">gallery</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="" class="active">book now</a></li>
+                    </ul>
+                </nav>
+                <i class="fa fa-bars" id="menu-icon" onclick="togglemenu()"></i>
+            </div>
+    </div>
+
+    <!--gallery-->
+    <div class="myGallery">
+        <img src="img/side (1).jpg" />
+        <img src="img/side (2).jpg" />
+        <img src="img/side (3).jpg" />
+        <img src="img/side (4).jpg" />
+        <img src="img/side (5).jpg" />
+        <img src="img/side (6).jpg" />
+      </div>
+
+
+
+    <!--footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <i class="fa fa-phone"></i>
+                    <h2>contact </h2>
+                    <p><span class="footer-span">phno: </span> +91-9944326175</p>
+                </div>
+                <div class="footer-col2">
+                    <img src="img/mustache - icon.png" width="125px">
+                    <h1>bombay salon</h1>
+                    <h3>we're the  last of breed.</h3>
+                    <p>achieve your dream style.</p>
+                </div>
+                <div class="footer-col3">
+                    <i class="fa fa-location-arrow"></i>
+                    <h2>address</h2>
+                    <p>G.N Garden, Neruperichal, <br> pooluvapatti (po), Tirupur -641602</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copy-right">
+        <p>&#169; 2021 - Tamilarasu</p>
+    </div>
+
+
+    <!--script-->
+    <script>
+        var mymenu = document.getElementById("mymenu");
+        mymenu.style.maxHeight = '0px';
+        function togglemenu(){
+            if( mymenu.style.maxHeight == '0px'){
+                mymenu.style.maxHeight = '300px';
+            }else{
+                mymenu.style.maxHeight = '0px';
+            }
+        }
+    </script>
+</body>
+</html>
